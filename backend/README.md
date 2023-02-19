@@ -19,30 +19,46 @@ Wherever you go, use Fitndur to locate nearby gyms and pay only for the days you
 ### page wise components
 
 - Navbar
-  [Home]
+
+#### [Home]
+
 - Hero with search bar
 - Offers || Annoncement
 - Brands connections
 - 3 sliders [ gyms, Martai arts, swimming] with view more options
 - other catogries tags below them. like [dance clubs, zumba classes, gymnastics]
-  [About]
+
+#### [About]
+
 - Page Header with title & breadcrumbs
 - About us Section
-  [Contact us]
+
+#### [Contact us]
+
 - Page Header with title & breadcrumbs
 - Contact us Section with form + social links
-  [Login / Sign Up]
+
+#### [Login / Sign Up]
+
 - <page> login / sign up reusable component </page>
-  [List you Business]
-  if logged in - form to submit gym details.
-  else login/sign up modal
-  [Search]
+
+#### [List you Business]
+
+if logged in - form to submit gym details.
+else login/sign up modal
+
+#### [Search]
+
 - search sidebar via pincode, area, city, price, ratings, features
 - search results
-  [Catogry]
+
+#### [Catogry]
+
 - Page Header with title & breadcrumbs
 - card list section to display results
-  [Gym Details page]
+
+#### [Gym Details page]
+
 - Breadcrumbs
 - Image galery
 - Gym detail sections [title, Description]
