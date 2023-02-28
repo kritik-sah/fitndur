@@ -1,0 +1,27 @@
+.navbar{
+    background-color: #ffffff;
+    color: $dark-color;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .logo-wrapper{
+        display: flex;
+        gap: 5px;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .menu-wrapper ul{
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    .cta-wrapper button{
+        display: flex;
+        gap: 5px;
+        align-items: center;
+        justify-content: flex-end;
+    }
+}
