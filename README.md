@@ -4,7 +4,7 @@ Wherever you go, use Fitndur to locate nearby gyms and pay only for the days you
 
 ## v-0.0.0
 
-### pages
+### pages 
 
 - Home page
 - About us
