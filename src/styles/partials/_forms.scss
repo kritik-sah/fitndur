@@ -1,0 +1,32 @@
+input{
+    &[type="text"]{
+        outline: none;
+        height: 40px;
+        width: 100%;
+        border-bottom: 1px solid #cccccc;
+    }
+    &[type="email"]{
+        outline: none;
+        height: 40px;
+        width: 100%;
+        border-bottom: 1px solid #cccccc;
+    }
+    &[type="tel"]{
+        outline: none;
+        height: 40px;
+        width: 100%;
+        border-bottom: 1px solid #cccccc;
+    }
+    &[type="number"]{
+        border: 1px solid #cccccc;
+        border-radius: 5px;
+        padding:5px;
+        outline: none;
+        height: 53px;
+        width: 100%;
+    }
+}
+textarea{
+    width: 100%;
+    outline: none;
+}

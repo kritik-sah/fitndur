@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+//partials
+@import 'partials/variables';
+@import 'partials/navbar';
+@import 'partials/forms';
+@import 'partials/custom';

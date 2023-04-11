@@ -1,36 +1,70 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# FitnDur - Fit & Endurance
 
-## Getting Started
+Wherever you go, use Fitndur to locate nearby gyms and pay only for the days you really use them.
 
-First, run the development server:
+## v-0.0.0
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+### pages
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Home page
+- About us
+- contact us
+- Login
+- Sign Up
+- List you business
+- Find nearby gym [Search page]
+- Catogory page
+- Gym Details Page
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### page wise components
 
-[http://localhost:3000/api/hello](http://localhost:3000/api/hello) is an endpoint that uses [Route Handlers](https://beta.nextjs.org/docs/routing/route-handlers). This endpoint can be edited in `app/api/hello/route.js`.
+- Navbar
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+#### [Home]
 
-## Learn More
+- Hero with search bar
+- Offers || Annoncement
+- Brands connections
+- 3 sliders [ gyms, Martai arts, swimming] with view more options
+- other catogries tags below them. like [dance clubs, zumba classes, gymnastics]
 
-To learn more about Next.js, take a look at the following resources:
+#### [About]
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Page Header with title & breadcrumbs
+- About us Section
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+#### [Contact us]
 
-## Deploy on Vercel
+- Page Header with title & breadcrumbs
+- Contact us Section with form + social links
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+#### [Login / Sign Up]
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- <page> login / sign up reusable component </page>
+
+#### [List you Business]
+
+if logged in - form to submit gym details.
+else login/sign up modal
+
+#### [Search]
+
+- search sidebar via pincode, area, city, price, ratings, features
+- search results
+
+#### [Catogry]
+
+- Page Header with title & breadcrumbs
+- card list section to display results
+
+#### [Gym Details page]
+
+- Breadcrumbs
+- Image galery
+- Gym detail sections [title, Description]
+- pricings model [daily, Monthly , Yearly]
+- Features of gym
+- Ratings
+- review
+
+- footer
