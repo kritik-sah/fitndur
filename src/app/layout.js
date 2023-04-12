@@ -3,6 +3,7 @@ import { Poppins, Amatic_SC } from 'next/font/google';
 import '../styles/globals.scss'
 import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
+import ClientOnly from './components/ClientOnly';
 
 export const metadata = {
   title: 'Create Next App',
@@ -28,7 +29,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${primary.variable} ${secondary.variable}`}>
       <body>
+        <ClientOnly>
         <Navbar/>
+        </ClientOnly>
         {children}
         <Footer/>
       </body>

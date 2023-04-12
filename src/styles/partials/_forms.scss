@@ -11,6 +11,12 @@ input{
         width: 100%;
         border-bottom: 1px solid #cccccc;
     }
+    &[type="password"]{
+        outline: none;
+        height: 40px;
+        width: 100%;
+        border-bottom: 1px solid #cccccc;
+    }
     &[type="tel"]{
         outline: none;
         height: 40px;
