@@ -3,7 +3,7 @@ import React from "react";
 import Container from "../utils/Container/Container";
 import Hamburger from "./hamburger/Hamburger";
 import Menu from "./Menu";
-
+import AuthModal from "../Auth/AuthModal";
 
 const Navbar = () => {
   return (
@@ -17,10 +17,12 @@ const Navbar = () => {
               width="40"
               height="40"
             />
-            <span className="text-3xl font-semibold font-primary hidden md:inline-block">ITNDUR</span>
+            <span className="text-3xl font-semibold font-primary hidden md:inline-block">
+              ITNDUR
+            </span>
           </div>
           <div className="flex item-center justify-end gap-1 md:gap-4">
-            <Menu/>
+            <Menu />
             <Hamburger />
           </div>
         </div>

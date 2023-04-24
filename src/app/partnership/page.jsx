@@ -1,6 +1,6 @@
 import React from "react";
-import BecomeApartner from "../components/BecomeApartner/BecomeApartner";
-import BreadcrumbsClient from "../components/utils/Breadcrumbs/BreadcrumbsClient";
+import BecomeApartner from "../../components/BecomeApartner/BecomeApartner";
+import BreadcrumbsClient from "../../components/utils/Breadcrumbs/BreadcrumbsClient";
 
 const page = () => {
     const breadcrumbs = [
