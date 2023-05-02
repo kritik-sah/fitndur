@@ -1,8 +1,8 @@
 import { create } from "zustand";
 
 const useAuthModal = create((set) => ({
-  isOpen: true,
-  isLogin: true,
+  isOpen: false,
+  isLogin: false,
   onOpen: () => set({ isOpen: true }),
   onClose: () => set({ isOpen: false }),
   goLogin: () => set({ isLogin: true }),

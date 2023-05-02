@@ -1,41 +1,47 @@
-.navbar{
-    width: 100%;
-    position:sticky;
-    top: 0px;
-    background-color:#ffffff;
-    z-index: 10;
+.navbar {
+  width: 100%;
+  position: sticky;
+  top: 0px;
+  background-color: #ffffff;
+  z-index: 10;
 
-    nav .navitem{
-        padding: 10px;
-        border-radius: 50px;
-        display: flex;
-        align-items: center;
-        font-weight: 500;
-        gap: 5px;
-        transition: all ease-in;
-        transition-delay: 0.1s;
-        
-        &:hover{
-            background-color: $light
-        }
-        &.active{
-            background-color: $light;
-            color: $primary;
-        }
-        &.cta{
-            background-color: $secondary;
-            &:hover{
-                color: $mainDark;
-            }
-        }
+  nav .navitem {
+    padding: 10px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    gap: 5px;
+    transition: all ease-in;
+    transition-delay: 0.1s;
+
+    &:hover {
+      background-color: $light;
     }
-    
-    .MegaMenu{
-        position: absolute;
-        top: 100%;
-        left: 0px;
-        width: 100%;
-        background-color: #ffffff;
-        padding: 10px;
+    &.active {
+      background-color: $light;
+      color: $primary;
     }
+    &.cta {
+      background-color: $secondary;
+      &:hover {
+        color: $mainDark;
+      }
+    }
+    &.cta-primary {
+      background-color: $primary-light;
+      &:hover {
+        color: $mainDark;
+      }
+    }
+  }
+
+  .MegaMenu {
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 10px;
+  }
 }

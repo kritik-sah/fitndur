@@ -11,49 +11,63 @@ datasource db {
 }
 
 model User {
-  id              String @id @default(auto()) @map("_id") @db.ObjectId
-  name            String?
-  email           String?   @unique
-  emailVerified   DateTime?
-  image           String?
-  hashedPassword  String?
-  createdAt       DateTime @default(now())
-  updatedAt       DateTime @updatedAt
-  favoriteIds     String[] @db.ObjectId
-  
-  accounts Account[]
-  listings Listing[]
+  id             String    @id @default(auto()) @map("_id") @db.ObjectId
+  name           String?
+  email          String?   @unique
+  emailVerified  DateTime?
+  phone          String?
+  phoneVerified  DateTime?
+  image          String?
+  hashedPassword String?
+  createdAt      DateTime  @default(now())
+  updatedAt      DateTime  @updatedAt
+  favoriteIds    String[]  @db.ObjectId
+  dob            String?
+  height         Float?
+  weight         Float?
+  sex            String?
+  accounts       Account[]
+  listings       Listing[]
 }
 
 model Account {
-  id String @id @default(auto()) @map("_id") @db.ObjectId
-  userId             String   @db.ObjectId
-  type               String
-  provider           String
-  providerAccountId  String
-  refresh_token      String?  @db.String
-  access_token       String?  @db.String
-  expires_at         Int?
-  token_type         String?
-  scope              String?
-  id_token           String?  @db.String
-  session_state      String?
-  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+  id                String  @id @default(auto()) @map("_id") @db.ObjectId
+  userId            String  @db.ObjectId
+  type              String
+  provider          String
+  providerAccountId String
+  refresh_token     String? @db.String
+  access_token      String? @db.String
+  expires_at        Int?
+  token_type        String?
+  scope             String?
+  id_token          String? @db.String
+  session_state     String?
+  user              User    @relation(fields: [userId], references: [id], onDelete: Cascade)
+
   @@unique([provider, providerAccountId])
 }
 
 model Listing {
-  id             String @id @default(auto()) @map("_id") @db.ObjectId
-  title String
-  description String
-  imageSrc String
-  createdAt DateTime @default(now())
-  category  String
-  roomCount Int
-  bathroomCount Int
-  guestCount Int
-  locationValue String
-  userId String @db.ObjectId
-  price Int
-  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+  id                String   @id @default(auto()) @map("_id") @db.ObjectId
+  title             String
+  description       String
+  listingImages     String[]
+  createdAt         DateTime @default(now())
+  category          Json[]
+  features          Json[]
+  services          Json[]
+  operationDateTime Json?
+  userId            String   @db.ObjectId
+  price             Json?
+  address           String?
+  country           String?
+  state             String?
+  pincode           Int?
+  owonerFirstName   String?
+  owonerLastName    String?
+  owonerPhone       String?
+  active            Boolean? @default(false)
+  approved          Boolean? @default(false)
+  user              User     @relation(fields: [userId], references: [id], onDelete: Cascade)
 }

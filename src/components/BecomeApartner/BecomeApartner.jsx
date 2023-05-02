@@ -1,46 +1,45 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Container from "../utils/Container/Container";
 import Select from "react-select";
-import CreatableSelect from 'react-select/creatable';
+import CreatableSelect from "react-select/creatable";
 import { Button } from "antd";
 
 const BecomeApartner = () => {
-    const [businessTitle, setBusinessTitle] = useState()
-    const [businessDesc, setBusinessDesc] = useState()
-    const [businessCategories, setBusinessCategories] = useState()
-    const [businessFeatures, setBusinessFeatures] = useState()
-    const [businessServices, setBusinessServices] = useState()
-    const [businessOpenDates, setBusinessOpenDates] = useState()
-    const [businessAddress, setBusinessAddress] = useState()
-    const [businessState, setBusinessState] = useState()
-    const [businessPincode, setBusinessPincode] = useState()
-    const [pricePerDay, setPricePerDay] = useState()
-    const [pricePerMonth, setPricePerYear] = useState()
-    const [contactFirstName, setContactFirstName] = useState()
-    const [contactLastName, setContactLastName] = useState()
-    const [contactEmail, setContactEmail] = useState()
-    const [contactNumber, setContactNumber] = useState()
-
-
+  const [businessTitle, setBusinessTitle] = useState();
+  const [businessDesc, setBusinessDesc] = useState();
+  const [businessCategories, setBusinessCategories] = useState();
+  const [businessFeatures, setBusinessFeatures] = useState();
+  const [businessServices, setBusinessServices] = useState();
+  const [businessOpenDates, setBusinessOpenDates] = useState();
+  const [businessAddress, setBusinessAddress] = useState();
+  const [businessState, setBusinessState] = useState();
+  const [businessPincode, setBusinessPincode] = useState();
+  const [pricePerDay, setPricePerDay] = useState();
+  const [pricePerMonth, setPricePerYear] = useState();
+  const [contactFirstName, setContactFirstName] = useState();
+  const [contactLastName, setContactLastName] = useState();
+  const [contactEmail, setContactEmail] = useState();
+  const [contactNumber, setContactNumber] = useState();
 
   const businessCategoryOptions = [
     { value: "chocolate", label: "Chocolate" },
     { value: "strawberry", label: "Strawberry" },
     { value: "vanilla", label: "Vanilla" },
   ];
+
   return (
     <>
       <Container>
-        <div className="flex flex-col md:flex-row w-full">
-          <div className="flex flex-col gap-4 w-full md:w-8/12 p-2 md:p-4">
-            <div className="border border-slate-600 rounded-md p-2">
+        <div className="flex flex-col md:flex-row gap-6 w-full my-6">
+          <div className="flex flex-col gap-6 w-full md:w-8/12">
+            <div className="border border-slate-200 rounded-md p-2">
               <label className="space-y-2">
                 <p>Business name (required)</p>
                 <input type="text" placeholder="Business name..." />
               </label>
             </div>
-            <div className="border border-slate-600 rounded-md p-2">
+            <div className="border border-slate-200 rounded-md p-2">
               <label className="space-y-2">
                 <p>Business Description (required)</p>
                 <textarea
@@ -50,7 +49,7 @@ const BecomeApartner = () => {
                 ></textarea>
               </label>
             </div>
-            <div className="border flex flex-col md:flex-row justify-between w-full gap-4 border-slate-600 rounded-md p-2">
+            <div className="border flex flex-col md:flex-row justify-between w-full gap-4 border-slate-200 rounded-md p-2">
               <div className="w-full md:w-6/12">
                 <label className="space-y-2">
                   <p>Business Categories (required)</p>
@@ -64,7 +63,7 @@ const BecomeApartner = () => {
                 </label>
               </div>
             </div>
-            <div className="border flex flex-col md:flex-row justify-between w-full gap-4 border-slate-600 rounded-md p-2">
+            <div className="border flex flex-col md:flex-row justify-between w-full gap-4 border-slate-200 rounded-md p-2">
               <div className="w-full md:w-6/12">
                 <label className="space-y-2">
                   <p>Services (required)</p>
@@ -78,7 +77,7 @@ const BecomeApartner = () => {
                 </label>
               </div>
             </div>
-            <div className="border flex flex-wrap gap-y-4 border-slate-600 rounded-md p-2">
+            <div className="border flex flex-wrap gap-y-4 border-slate-200 rounded-md p-2">
               <div className="w-full">
                 <label className="space-y-2">
                   <p>Business Address (required)</p>
@@ -99,8 +98,8 @@ const BecomeApartner = () => {
               </div>
             </div>
           </div>
-          <div className="flex flex-col gap-4 w-full md:w-4/12 p-2 md:p-4">
-            <div className="border flex flex-col justify-between w-full gap-4 border-slate-600 rounded-md p-2">
+          <div className="flex flex-col gap-6 w-full md:w-4/12">
+            <div className="border flex flex-col justify-between w-full gap-4 border-slate-200 rounded-md p-2">
               <div className="w-full">
                 <label className="space-y-2">
                   <p>Price/day (required)</p>
@@ -120,7 +119,7 @@ const BecomeApartner = () => {
                 </label>
               </div>
             </div>
-            <div className="border flex flex-col justify-between w-full gap-4 border-slate-600 rounded-md p-2">
+            <div className="border flex flex-col justify-between w-full gap-4 border-slate-200 rounded-md p-2">
               <div className="flex gap-2">
                 <div className="w-full">
                   <label className="space-y-2">

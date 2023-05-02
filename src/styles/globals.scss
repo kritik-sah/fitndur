@@ -3,7 +3,10 @@
 @tailwind utilities;
 
 //partials
-@import 'partials/variables';
-@import 'partials/navbar';
-@import 'partials/forms';
-@import 'partials/custom';
+@import "partials/variables";
+@import "partials/navbar";
+@import "partials/forms";
+@import "partials/custom";
+
+//Layers
+@import "partials/layers";

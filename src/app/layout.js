@@ -5,6 +5,8 @@ import Footer from "../components/Footer/Footer";
 import ClientOnly from "../components/ClientOnly";
 import AuthModal from "@/components/Auth/AuthModal";
 import getCurrentUser from "./actions/getCurrentUser";
+import Toasts from "@/components/utils/Toasts/Toasts";
+// import MaterialTailwind from "@/components/Wrapper/MaterialTailwind";
 
 export const metadata = {
   title: "Create Next App",
@@ -27,16 +29,18 @@ const secondary = Amatic_SC({
 
 export default async function RootLayout({ children }) {
   const currentUser = await getCurrentUser();
-  console.log(currentUser, "Current user");
   return (
     <html lang="en" className={`${primary.variable} ${secondary.variable}`}>
       <body>
+        {/* <MaterialTailwind> */}
         <ClientOnly>
           <AuthModal />
-          <Navbar />
+          <Toasts />
+          <Navbar user={currentUser} />
         </ClientOnly>
         {children}
         <Footer />
+        {/* </MaterialTailwind> */}
       </body>
     </html>
   );
