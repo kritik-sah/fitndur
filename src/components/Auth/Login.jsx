@@ -5,7 +5,7 @@ import { toast } from "react-hot-toast";
 import { signIn } from "next-auth/react";
 import { FieldValues, SubmitHandler, useForm } from "react-hook-form";
 import axios from "axios";
-import useAuthModal from "@/app/hooks/useAuthModal";
+import useAuthModal from "../../app/hooks/useAuthModal";
 import { useRouter } from "next/navigation";
 const Login = () => {
   const router = useRouter();

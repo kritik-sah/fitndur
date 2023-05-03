@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import IconBtn from "../utils/Buttons/IconBtn";
 import { toast } from "react-hot-toast";
 import axios from "axios";
-import useAuthModal from "@/app/hooks/useAuthModal";
+import useAuthModal from "../../app/hooks/useAuthModal";
 
 const Register = () => {
   const authModal = useAuthModal();

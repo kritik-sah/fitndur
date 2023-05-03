@@ -1,5 +1,5 @@
 "use client";
-import useAuthModal from "@/app/hooks/useAuthModal";
+import useAuthModal from "../../app/hooks/useAuthModal"; //@/app/hooks/useAuthModal";
 import { Dropdown } from "antd";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";

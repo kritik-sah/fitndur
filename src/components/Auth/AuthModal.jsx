@@ -6,7 +6,7 @@ import { AiFillGithub } from "react-icons/ai";
 import { FcGoogle } from "react-icons/fc";
 import Register from "./Register";
 import Login from "./Login";
-import useAuthModal from "@/app/hooks/useAuthModal";
+import useAuthModal from "../../app/hooks/useAuthModal";
 import { signIn } from "next-auth/react";
 
 const AuthModal = () => {

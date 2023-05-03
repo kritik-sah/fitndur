@@ -3,9 +3,9 @@ import "../styles/globals.scss";
 import Navbar from "../components/Navbar/Navbar";
 import Footer from "../components/Footer/Footer";
 import ClientOnly from "../components/ClientOnly";
-import AuthModal from "@/components/Auth/AuthModal";
+import AuthModal from "../components/Auth/AuthModal";
 import getCurrentUser from "./actions/getCurrentUser";
-import Toasts from "@/components/utils/Toasts/Toasts";
+import Toasts from "../components/utils/Toasts/Toasts";
 // import MaterialTailwind from "@/components/Wrapper/MaterialTailwind";
 
 export const metadata = {
