@@ -6,6 +6,7 @@ import ClientOnly from "../components/ClientOnly";
 import AuthModal from "../components/Auth/AuthModal";
 import getCurrentUser from "./actions/getCurrentUser";
 import Toasts from "../components/utils/Toasts/Toasts";
+import Head from "next/head";
 // import MaterialTailwind from "@/components/Wrapper/MaterialTailwind";
 
 export const metadata = {
@@ -31,6 +32,9 @@ export default async function RootLayout({ children }) {
   const currentUser = await getCurrentUser();
   return (
     <html lang="en" className={`${primary.variable} ${secondary.variable}`}>
+      <Head>
+        <link rel="shortcut icon" href="./icon.png" />
+      </Head>
       <body>
         {/* <MaterialTailwind> */}
         <ClientOnly>

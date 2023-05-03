@@ -1,5 +1,5 @@
 "use client";
-import Image from "next/image";
+// import Image from "next/image";
 import React from "react";
 import Container from "../utils/Container/Container";
 import Hamburger from "./hamburger/Hamburger";
@@ -16,7 +16,7 @@ const Navbar = ({ user }) => {
             onClick={() => router.push("/")}
             className="flex items-center py-4"
           >
-            <Image
+            <img
               src="/assets/icons/fitndure-logo.png"
               alt="F"
               width="40"
