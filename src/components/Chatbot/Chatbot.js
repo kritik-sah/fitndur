@@ -58,7 +58,7 @@ const Chatbot = () => {
       ],
       
     };
-    fetch("http://api.portkey.ai/v1/proxy/completions", {
+    fetch("https://api.portkey.ai/v1/proxy/completions", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
